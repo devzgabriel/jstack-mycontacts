@@ -3,11 +3,7 @@ import arrowImg from '../../assets/images/icons/arrow.svg';
 import editImg from '../../assets/images/icons/edit.svg';
 import trashImg from '../../assets/images/icons/trash.svg';
 import {
-  Card,
-  Container,
-  Header,
-  InputSearchContainer,
-  ListContainer,
+  Card, Container, Header, InputSearchContainer, ListContainer,
 } from './styles';
 
 export default function Home() {
@@ -40,9 +36,9 @@ export default function Home() {
           </div>
 
           <div className="actions">
-            <a href="/">
+            <Link href="/edit/1">
               <img src={editImg} alt="edit" />
-            </a>
+            </Link>
             <button type="button">
               <img src={trashImg} alt="delete" />
             </button>
