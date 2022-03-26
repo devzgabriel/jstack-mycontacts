@@ -36,7 +36,7 @@ export default function Home() {
           </div>
 
           <div className="actions">
-            <Link href="/edit/1">
+            <Link to="/edit/1">
               <img src={editImg} alt="edit" />
             </Link>
             <button type="button">
