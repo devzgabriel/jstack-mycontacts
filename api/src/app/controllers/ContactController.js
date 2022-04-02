@@ -21,7 +21,7 @@ class ContactController {
   }
 
   async store(request, response) {
-    const { name, email, phone, categoryId } = request.body;
+    const { name, email, phone, category_id } = request.body;
 
     if (!name || !email) {
       return response.status(400).json({ error: 'Missing fields' });
@@ -37,7 +37,7 @@ class ContactController {
       name,
       email,
       phone,
-      category_id: categoryId,
+      category_id,
     });
 
     response.json(contact);
@@ -45,7 +45,7 @@ class ContactController {
 
   async update(request, response) {
     const { id } = request.params;
-    const { name, email, phone, categoryId } = request.body;
+    const { name, email, phone, category_id } = request.body;
 
     if (!name || !email) {
       return response.status(400).json({ error: 'Missing fields' });
@@ -67,7 +67,7 @@ class ContactController {
       name,
       email,
       phone,
-      category_id: categoryId,
+      category_id,
     });
 
     response.json(updatedContact);

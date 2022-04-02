@@ -25,8 +25,7 @@ export default styled.button`
     cursor: not-allowed;
   }
 
-  ${({ danger, theme }) =>
-    danger
+  ${({ danger, theme }) => danger
     && css`
       background: ${theme.colors.danger.main};
 
