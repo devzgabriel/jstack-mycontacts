@@ -7,7 +7,7 @@ const client = new Client({
   user: 'root',
   password: 'root',
 
-  database: 'mycontacts',
+  database: 'my_contacts',
 });
 
 client.connect();
